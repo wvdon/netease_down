@@ -1,6 +1,11 @@
 import requests
 from lxml import etree
 import os
+
+def escape_filename(name):
+    return name.replace("/", "").replace('?', '')
+
+
 class netease(object):
     def __init__(self):
         self.headers = {
@@ -8,7 +13,7 @@ class netease(object):
 
         }
         self.url = input("输入你要爬取歌单的id： ")
-        self.url = "https://music.163.com/discover/toplist?id="+self.url
+        self.url = "https://music.163.com/playlist?id="+self.url
         #self.url = "https://music.163.com/discover/toplist?id=3778678"
         self.url_list=[]
         self.name_list = []
@@ -36,7 +41,8 @@ class netease(object):
         print(url)
         music = requests.get(url,headers=self.headers)
         path1 = r'./music/'
-        path=path1+str(name)
+        name = escape_filename(str(name))
+        path = path1+name
         with open(path,"wb") as m:
              m.write(music.content)
              m.close()
