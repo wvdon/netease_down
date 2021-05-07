@@ -21,24 +21,22 @@ pip install -r requests.txt
 python netease.py
 ```
 
-输入你要下载的歌单id :
+输入你要爬取歌单或者歌曲的链接URL：
 
 ```
-输入你要爬取歌单的id： 2884035
-解析完成
+本系统可以爬取指定歌单的所有歌曲，或者下载单首歌曲
+ 输入你要爬取歌单或者歌曲的链接：
+https://music.163.com/#/playlist?id=6745481740
 获取界面完成
-开始下载第0首歌愿你有故乡.mp3
-http://music.163.com/song/media/outer/url?id=1390298115.mp3
-下载愿你有故乡.mp3完成
-开始下载第1首歌推理.mp3
-http://music.163.com/song/media/outer/url?id=1390484461.mp3
-下载推理.mp3完成
-开始下载第2首歌下雨的杭州.mp3
-http://music.163.com/song/media/outer/url?id=1391433967.mp3
-下载下雨的杭州.mp3完成
-开始下载第3首歌狗狗诗人.mp3
-http://music.163.com/song/media/outer/url?id=1390484118.mp3
-下载狗狗诗人.mp3完成
+获取界面完成
+解析完成
+开始下载第1首歌海底（Live）.mp3
+下载海底（Live）.mp3完成
+开始下载第2首歌嫌晚.mp3
+下载嫌晚.mp3完成
+开始下载第3首歌Mood (Lil Ghost Remix).mp3
+下载Mood (Lil Ghost Remix).mp3完成
+开始下载第4首歌溯 (Reverse) (Live).mp3
 ······················
 ```
 
